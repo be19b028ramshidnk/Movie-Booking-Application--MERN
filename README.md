@@ -42,3 +42,10 @@ Redux
 React Router
 Axios
 MaterialUI
+
+# Debugging
+postman
+
+# Security
+used encrypting the password by bcryptjs
+
