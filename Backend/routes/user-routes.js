@@ -14,4 +14,4 @@ userRouter.delete("/:id",deleteUser);
 userRouter.post("/login",login) // frontend work
 
 
-export default userRouter;
+export default userRouter; // we have to export this for use it on app.js
