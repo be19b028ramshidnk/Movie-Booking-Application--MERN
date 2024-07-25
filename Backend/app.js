@@ -1,8 +1,10 @@
 import express from 'express'; // require is used for import statements
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import 'dotenv/config'
 import userRouter from './routes/user-routes.js';
-dotenv.config();
+import adminRouter from './routes/admin-routes.js';
+import movieRouter from './routes/movie-routes.js';
+
 const app = express();
 
 
@@ -11,6 +13,9 @@ const app = express();
 //define the middlewares
 app.use(express.json()) // this tells that this app will only use json data
 app.use("/user",userRouter)
+app.use("/admin",adminRouter)
+app.use("/movie",movieRouter)
+
 
 
 //connect to server and database

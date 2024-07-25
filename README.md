@@ -48,4 +48,4 @@ postman
 
 # Security
 used encrypting the password by bcryptjs
-
+used token for login ( checking encryption and decryption are same)
