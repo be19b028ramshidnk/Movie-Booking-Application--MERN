@@ -43,6 +43,12 @@ React Router
 Axios
 MaterialUI
 
+# Front End requirement
+Header with React Router V6
+Redut  State Management for Authentication Status
+Axios for API Calls (3rd party promis base http base library)
+Diffrent Interface For Admin and User
+
 # Debugging
 postman
 

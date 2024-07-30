@@ -4,6 +4,7 @@ import 'dotenv/config'
 import userRouter from './routes/user-routes.js';
 import adminRouter from './routes/admin-routes.js';
 import movieRouter from './routes/movie-routes.js';
+import bookingRouter from './routes/booking-routes.js';
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json()) // this tells that this app will only use json data
 app.use("/user",userRouter)
 app.use("/admin",adminRouter)
 app.use("/movie",movieRouter)
+app.use("/booking", bookingRouter)
 
 
 

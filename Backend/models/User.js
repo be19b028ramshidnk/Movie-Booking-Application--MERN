@@ -14,7 +14,12 @@ const userSchema = new Schema({
         type:String,
         required:true,
         minLength:4,
-    }
+    },
+    bookings:[{
+        type:mongoose.Types.ObjectId,
+        ref:"Bookings"
+    }]
+
 
 })
 

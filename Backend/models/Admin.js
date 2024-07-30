@@ -15,7 +15,10 @@ const adminSchema = new mongoose.Schema({
     },
     // there will be probably one or 2 admins
     addedMovies: [{
-        type:String
+        // we need a referance to booking
+        type: mongoose.Types.ObjectId,
+        // we need to a referance to the collection
+        ref:"Movie" ,//we need to the refer to the movie
     }]
 });
 
