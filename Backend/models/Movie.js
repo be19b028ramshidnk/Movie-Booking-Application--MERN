@@ -31,10 +31,11 @@ const movieSchema = new mongoose.Schema({
         type:Boolean
     },
     //bookings stored inside an array
-    bookings:[{type:String}],
+    bookings:[{type:mongoose.Types.ObjectId, ref: "Bookings"}],
     // we need to know, which admin is created this movie
     admin:{
-        type:String,
+        type:mongoose.Types.ObjectId,
+        ref:"Admin",
         required:true
     }
 })
