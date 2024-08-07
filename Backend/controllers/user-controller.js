@@ -47,7 +47,7 @@ export const signup = async(req,res,next) =>{
     if (!user){
         return res.status(500).json({message:"Unexpected error"})
     }
-    return res.status(201).json({user}) // post newely created user
+    return res.status(201).json({id:user._id}) // post newely created user
 
 }
 
