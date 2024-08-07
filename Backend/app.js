@@ -5,18 +5,27 @@ import userRouter from './routes/user-routes.js';
 import adminRouter from './routes/admin-routes.js';
 import movieRouter from './routes/movie-routes.js';
 import bookingRouter from './routes/booking-routes.js';
+import cors from 'cors';
+
 
 const app = express();
+
 
 
 //user models and controllers
 
 //define the middlewares
+app.use(cors());
 app.use(express.json()) // this tells that this app will only use json data
 app.use("/user",userRouter)
 app.use("/admin",adminRouter)
 app.use("/movie",movieRouter)
 app.use("/booking", bookingRouter)
+  
+  
+  // Your API routes
+  
+
 
 
 

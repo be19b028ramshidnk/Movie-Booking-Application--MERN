@@ -44,7 +44,7 @@ Axios
 MaterialUI
 
 # Front End requirement
-Header with React Router V6
+Header with React Router V6 : Hept to fetch faster, single page Application
 Redut  State Management for Authentication Status
 Axios for API Calls (3rd party promis base http base library)
 Diffrent Interface For Admin and User
