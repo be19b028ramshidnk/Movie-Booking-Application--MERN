@@ -1,9 +1,9 @@
-import { Box, Typography } from '@mui/material'
-import React, { useEffect, useState } from 'react'
-import { getAllMovies } from '../../api-helpers/api-helpers';
-import { Movieitem } from './Movieitem';
+import { Box, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { getAllMovies } from "../../api-helpers/api-helpers";
+import MovieItem from "./MovieItem";
 
-export const Movies = () => {
+const Movies = () => {
   const [movies, setMovies] = useState();
   useEffect(() => {
     getAllMovies()
@@ -16,8 +16,8 @@ export const Movies = () => {
         margin={"auto"}
         variant="h4"
         padding={2}
-        width="100%"
-        bgcolor={"black"}
+        width="40%"
+        bgcolor={"#900C3F"}
         color="white"
         textAlign={"center"}
       >
@@ -33,7 +33,7 @@ export const Movies = () => {
       >
         {movies &&
           movies.map((movie, index) => (
-            <Movieitem
+            <MovieItem
               key={index}
               id={movie._id}
               posterUrl={movie.posterUrl}
@@ -44,5 +44,6 @@ export const Movies = () => {
       </Box>
     </Box>
   );
-  
-}
+};
+
+export default Movies;

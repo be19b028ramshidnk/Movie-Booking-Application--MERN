@@ -55,3 +55,10 @@ postman
 # Security
 used encrypting the password by bcryptjs
 used token for login ( checking encryption and decryption are same)
+
+## Library used
+### Redux
+* State Management Library
+* https://redux-toolkit.js.org/
+* React-Redux officially work with React
+* 
