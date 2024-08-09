@@ -1,9 +1,9 @@
 import express from "express";
-import { deleteBooking, getBookingbyId, newBooking } from "../controllers/booking-controller.js";
+import { deleteBooking, getBookingById, newBooking } from "../controllers/booking-controller.js";
 
 const bookingRouter = express.Router()
 
-bookingRouter.get("/:id",getBookingbyId)
+bookingRouter.get("/:id",getBookingById)
 bookingRouter.post('/', newBooking)
 bookingRouter.delete("/:id", deleteBooking)
 // we need to export booking router for use in booking
