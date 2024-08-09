@@ -10,7 +10,7 @@ import {
   import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
   import React, { useState } from "react";
   import { useNavigate } from "react-router-dom";
-  import { adminLogin, sendAdminAuthRequest } from "../../helpers/api-helpers";
+  import { adminLogin } from "../../helpers/api-helpers";
   import { useDispatch } from "react-redux";
   import { adminActions } from "../../store/admin-slice";
   const labelSx = { marginRight: "auto", mt: 1, mb: 1 };

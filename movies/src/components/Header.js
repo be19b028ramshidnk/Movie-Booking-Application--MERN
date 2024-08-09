@@ -66,7 +66,6 @@ const Header = () => {
             value={value}
             onChange={(e, val) => setValue(val)}
           >
-            <Tab LinkComponent={Link} to="/movies" label="Movies" />
             {!isAdminLoggedIn && !isUserLoggedIn && (
               <>
                 <Tab label="Admin" LinkComponent={Link} to="/admin" />
@@ -74,7 +73,9 @@ const Header = () => {
               </>
             )}
             {isUserLoggedIn && (
+
               <>
+                <Tab LinkComponent={Link} to="/movies" label="Movies" />
                 <Tab label="Profile" LinkComponent={Link} to="/user" />
                 <Tab
                   onClick={() => logout(false)}

@@ -12,7 +12,7 @@ const Auth = () => {
   const onResReceived = (data) => {
     console.log(data);
     dispatch(userActions.login());
-    localStorage.setItem("userId", data.id);
+    localStorage.setItem("userId", data.id); // global windowvariable
     navigate("/");
   };
   const getData = (data) => {

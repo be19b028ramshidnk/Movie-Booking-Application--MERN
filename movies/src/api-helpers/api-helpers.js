@@ -45,6 +45,8 @@ export const sendAdminAuthRequest = async (data) => {
   return resData;
 };
 
+
+// to get movie details
 export const getMovieDetails = async (id) => {
   const res = await axios.get(`/movie/${id}`).catch((err) => console.log(err));
   if (res.status !== 200) {
@@ -60,7 +62,7 @@ export const newBooking = async (data) => {
       movie: data.movie,
       seatNumber: data.seatNumber,
       date: data.date,
-      user: localStorage.getItem("userId"),
+      user: localStorage.getItem("userId"), /* user id is available on local storage */
     })
     .catch((err) => console.log(err));
 

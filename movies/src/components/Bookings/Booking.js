@@ -40,11 +40,11 @@ const Booking = () => {
           >
             Book TIckets Of Movie: {movie.title}
           </Typography>
-          <Box display={"flex"} justifyContent={"center"}>
+          <Box display={"flex"} justifyContent={"center"}> 
             <Box
               display={"flex"}
               justifyContent={"column"}
-              flexDirection="column"
+              flexDirection="column" 
               paddingTop={3}
               width="50%"
               marginRight={"auto"}
@@ -55,14 +55,18 @@ const Booking = () => {
                 src={movie.posterUrl}
                 alt={movie.title}
               />
-              <Box width={"80%"} marginTop={3} padding={2}>
+              <Box width={"80%"} marginTop={3} padding={2}>  
+
+                {/* mapping the actors name */}
                 <Typography paddingTop={2}>{movie.description}</Typography>
                 <Typography fontWeight={"bold"} marginTop={1}>
                   Starrer:
                   {movie.actors.map((actor) => " " + actor + " ")}
+
+                {/* Release Date */}
                 </Typography>
                 <Typography fontWeight={"bold"} marginTop={1}>
-                  Release Date: {new Date(movie.releaseDate).toDateString()}
+                  Release Date: {new Date(movie.releaseDate).toDateString()} {/* for readable format */}
                 </Typography>
               </Box>
             </Box>
@@ -77,11 +81,12 @@ const Booking = () => {
                   <FormLabel>Seat Number</FormLabel>
                   <TextField
                     name="seatNumber"
-                    value={inputs.seatNumber}
-                    onChange={handleChange}
                     type={"number"}
                     margin="normal"
                     variant="standard"
+                    value={inputs.seatNumber}
+                    onChange={handleChange}
+                    
                   />
                   <FormLabel>Booking Date</FormLabel>
                   <TextField

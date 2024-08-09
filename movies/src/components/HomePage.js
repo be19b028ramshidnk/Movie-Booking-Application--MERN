@@ -15,8 +15,8 @@ const HomePage = () => {
     <Box width={"100%"} height="100%" margin="auto" marginTop={2}>
       <Box margin={"auto"} width="80%" height={"40vh"} padding={2}>
         <img
-          src="https://i.ytimg.com/vi/bweRG6WueuM/maxresdefault.jpg"
-          alt="Brahmastra"
+          src="https://images.deccanherald.com/deccanherald%2F2024-01%2F53287ef8-e271-40ce-baba-860889ec5c49%2FGCrTUymW8AEgYwj.jpeg?rect=0%2C23%2C600%2C315&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+          alt="Greatest of All Time"
           width={"100%"}
           height={"100%"}
         />
